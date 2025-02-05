@@ -71,7 +71,7 @@ def objective(args):
 
     return {'loss': loss_score, 'status': STATUS_OK}
 
-# Initiate a Trial object 
+# Initiate a Trials object 
 trials = Trials()
 
 # Iterate with fmin to get best parameters in 50 trials
