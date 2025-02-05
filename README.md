@@ -1,6 +1,6 @@
 # `hyperopt` Demo: Travel Insurance Claims Prediction
 
-Suppose we're working with a travel insurance data to predict whether an insured will file a claim. This seemingly straightforward classification problem actually presents several challenging aspects that make it perfect for demonstrating the importance of proper hyperparameter tuning.
+Suppose we're working with a travel insurance data to predict whether an insurant will file a claim. This seemingly straightforward classification problem actually presents several challenging aspects that make it perfect for demonstrating the importance of proper hyperparameter tuning.
 
 ![image](https://github.com/user-attachments/assets/b205f816-ab9c-48ab-86a9-5b685fd4f314)
 
