@@ -16,7 +16,7 @@ To address the class imbalance, we've made some initial adjustments to our XGBoo
 ![image](https://github.com/user-attachments/assets/9b479efb-f20a-4017-b56e-72fbaf3ed517)
 
 
-However, despite our preparations, our model isn't performing as well as we'd hope. We're particularly interested in minimizing false negatives - cases where we predict a customer won't file a claim but they actually do. This makes recall our key metric. However, our results are concerning: **while our model achieves nearly perfect recall on the training data (close to 1.0), it drops dramatically to around 0.4 on our test data. This substantial gap between training and test performance is a classic sign of overfitting** - our model has learned the training data too well but fails to generalize to new cases. This suggests that **the default values for parameters other than scale_pos_weight are unsuited for imbalanced data**.
+However, despite our preparations, our model isn't performing as well as we'd hope. We're particularly interested in minimizing false negatives - cases where we predict a customer won't file a claim but they actually do. This makes recall our key metric. However, our results are concerning: **while our model achieves nearly perfect recall on the training data (close to 1.0), it drops dramatically to around 0.4 on our test data. This substantial gap between training and test performance is a classic sign of overfitting** - our model has learned the training data too well but fails to generalize to new cases. This suggests that **the default values for parameters other than `scale_pos_weight` are unsuited for imbalanced data**.
 
 ![image](https://github.com/user-attachments/assets/1e1ecbd2-81f7-499e-b158-a0187208cd79)
 
