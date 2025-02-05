@@ -74,6 +74,7 @@ def objective(args):
 # Initiate a Trial object 
 trials = Trials()
 
+# Iterate with fmin to get best parameters
 tuning_result = fmin(fn=objective, 
                      space=params_space, 
                      algo=tpe.suggest,
