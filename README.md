@@ -51,6 +51,7 @@ params_space = {
 Next, we define our objective function that Hyperopt will optimize. This function will pass the tuned parameters into the model, perform cross-validation, and return the loss score (1 minus the mean recall):
 
 ```python
+# Objective function to be minimized by hyperopt
 def objective(args):
     
     model_pipe = Pipeline([
@@ -80,7 +81,7 @@ tuning_result = fmin(fn=objective,
                      trials=trials, 
                      rstate=np.random.default_rng(0))
 
-# Best_params from trials
+# Obtain best parameters from tuning_result (an object) and params_space
 best_params = space_eval(params_space, tuning_result)
 ```
 
