@@ -88,7 +88,7 @@ best_params = space_eval(params_space, tuning_result)
 
 ![image](https://github.com/user-attachments/assets/f3c9d3e2-402e-4bdd-96a3-f45540bd9559)
 
-**As shown in the accompanying image, Hyperopt found an optimal set of parameters in just 50 trials**. But the real proof of success lies in the tuned model's performance metrics (see below). **The recall on our test dataset has skyrocketed from 41% to 82%**. Note also how the gap between training and test recall has narrowed significantly, indicating that our model is now generalizing much better to unseen data. To achieve similar results using Grid Search, we could have needed to evaluate many more combinations, consuming significantly more computational resources and time.
+**As shown above, Hyperopt found an optimal set of parameters in just 50 trials**. But the real proof of success lies in the tuned model's performance metrics (see below). **The recall on our test dataset has skyrocketed from 41% to 82%**. Note also how the gap between training and test recall has narrowed significantly, indicating that our model is now generalizing much better to unseen data. To achieve similar results using Grid Search, we could have needed to evaluate many more combinations, consuming significantly more computational resources and time.
 
 ![image](https://github.com/user-attachments/assets/517523f0-5b3e-46bb-a2f5-325d26ee546e)
 
